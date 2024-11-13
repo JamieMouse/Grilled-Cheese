@@ -1,3 +1,5 @@
+**Warning, this is a bot for use on an adult themed website, and so it may come with themes that are explicit and inappropriate for young audiences. Proceed into this repository at your own risk.**
+
 The bot recognizes commands in the channel it's a member of (Jamie's flat) when they are preceded by an !. The bot will then execute the command, and respond in the channel with an outcome. the Cheese Wheel will ignore all private messages. For example... !help will print the command list in the channel for everyone to see. That command list is also here on the page, but in the event I forget to update this, the one the bot has is most up to date.
 
 The game is not meant to be a replacement for RP, but an enhancement to it and a bit of a challenge for a players improvisation skills. Any game impacting action costs energy. Energy is gained by making roleplaying posts. Basically anything that is preceded by /me is considered a post. In the future there may be limits on how fast you can generate energy, or how long a post needs to be to yield energy. Today all roleplay posts generate energy up to a max of 3.
