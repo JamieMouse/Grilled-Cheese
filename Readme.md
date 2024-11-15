@@ -34,7 +34,7 @@ While dominated, you can use energy to struggle. The struggle command has a 1/6 
 
 I can make no guarantee's behind this code. I followed the f-chat rules and protocol to the best of my ability, and in some cases gave the bot even more strict requirements than f-chat demands. It should be able to interact safely with f-chat. If you run your own version of this bot, be sure to read the f-chat rules regarding bots and only join this bot to a private channel that you own.
 
-The author of this repository takes no responsibility for administrative action taken against accounts running 
+The author of this repository takes no responsibility for administrative action taken against accounts running their own copy of Grilled Cheese. I did my best to follow the rules and documentation, but there are no guarantee's with f-list.
 
 https://wiki.f-list.net/Code_of_Conduct#Bots
 
