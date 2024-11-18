@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text;
+using System.Threading.Tasks.Sources;
+using Newtonsoft.Json;
 
 namespace GrilledCheese
 {
@@ -38,7 +40,25 @@ namespace GrilledCheese
 
         public string Inspect()
         {
-            return JsonConvert.SerializeObject(this);
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine(FormatLine(0, FriendlyName, string.Empty));
+            builder.AppendLine(FormatLine(1, nameof(Resolve), Resolve.ToString()));
+            builder.AppendLine(FormatLine(1, nameof(Energy), Energy.ToString()));
+            builder.AppendLine(FormatLine(1, nameof(Location), Location.ToString()));
+            return builder.ToString();
+        }
+
+        private string FormatLine(int tabs, string key, string value)
+        {
+            const string tab = "   ";
+            string output = string.Empty;
+            for (int i = 0; i < tabs; i++)
+            {
+                output+=tab;
+            }
+
+            output += key + ":" + value;
+            return output;
         }
     }
 }
