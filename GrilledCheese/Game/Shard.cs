@@ -33,8 +33,10 @@ namespace GrilledCheese
             {
                 aliasStore[token.ToLower()] = alias.ToLower();
             }
-
-            aliasStore.Add(token.ToLower(), alias.ToLower());
+            else
+            {
+                aliasStore.Add(token.ToLower(), alias.ToLower());
+            }
         }
 
         public PlayerState ActivatePlayer(string playerName, string playerId)

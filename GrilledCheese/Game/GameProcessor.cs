@@ -52,7 +52,10 @@ public class GameProcessor
         // The shape of a command is {command} {arguments}
         // Where arguments often contain targets as well as a thing to do
         var argGroup = fullSubmission.Split(' ');
-        argGroup = argGroup.Select(x => shard.TranslateAlias(x)).ToArray();
+        if (!argGroup[0].Equals(nameof(SetAlias), StringComparison.InvariantCultureIgnoreCase))
+        {
+            argGroup = argGroup.Select(x => shard.TranslateAlias(x)).ToArray();
+        }
 
         string command = argGroup[0];
 
