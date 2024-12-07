@@ -74,8 +74,8 @@ public class GameProcessor
 
         if (!executingCommand.ValidateArgs(argGroup))
         {
-            response.Append("Command not formatted correctly");
-            response.Append(executingCommand.Definition);
+            response.AppendLine("Command not formatted correctly");
+            response.AppendLine(executingCommand.Definition);
             return response.ToString();
         }
 
