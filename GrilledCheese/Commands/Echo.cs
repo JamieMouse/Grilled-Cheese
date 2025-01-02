@@ -14,11 +14,6 @@ public class Echo : Command
 
     public override bool ValidateArgs(string[] args)
     {
-        if (args.Count() != 1)
-        {
-            return false;
-        }
-
         return true;
     }
 }

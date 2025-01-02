@@ -16,19 +16,23 @@ CheeseRandom.Initialize();
 
 GameProcessor gameProcessor = new GameProcessor(config);
 
-FChatRelay fChat = new FChatRelay();
-await fChat.Setup(config, gameProcessor);
+DiscordRelay discord = new DiscordRelay();
+var discordTask = discord.Setup(config, gameProcessor);
 
-/*DiscordRelay discord = new DiscordRelay();
-var discordTask = discord.Setup(config, gameProcessor);*/
-
-// give the f-chat client a while to connect
-await Task.Delay(10000);
-
-// Periodically check if the f-chat client has disconnected
-while (fChat.loggedIn)
+if (true)
 {
-    await Task.Delay(1000);
+    FChatRelay fChat = new FChatRelay();
+    await fChat.Setup(config, gameProcessor);
+
+    // give the f-chat client a while to connect
+    await Task.Delay(10000);
+
+    // Periodically check if the f-chat client has disconnected
+    while (fChat.loggedIn)
+    {
+        await Task.Delay(1000);
+    }
 }
 
-//await discordTask;
+await discordTask;
+

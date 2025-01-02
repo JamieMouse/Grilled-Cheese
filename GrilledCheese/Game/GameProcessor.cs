@@ -28,7 +28,7 @@ public class GameProcessor
     {
         StringBuilder response = new StringBuilder();
 
-        if (fullSubmission.StartsWith("/me"))
+        if (fullSubmission.StartsWith("/me") || (fullSubmission.StartsWith('_') && fullSubmission.EndsWith('_')))
         {
             // This is a post not a command, reward the user with some energy
             PlayerState player = shard.GetPlayer(actorId);

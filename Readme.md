@@ -39,3 +39,12 @@ The author of this repository takes no responsibility for administrative action 
 https://wiki.f-list.net/Code_of_Conduct#Bots
 
 https://wiki.f-list.net/F-Chat_Protocol#Bots
+
+
+# Discord Setup
+
+There is no public application in discord for this bot, but if you're self hosting your own copy you can follow the instructions here to create a bot instance. https://dsharpplus.github.io/DSharpPlus/articles/basics/bot_account.html 
+
+Get the bot token after its created and add it to your config.json file as DiscordToken.
+
+Our bot only needs the Send Message permission. You can use this link to invite the bot to your server once created. Replace the {} with the client id of the application you created. https://discord.com/api/oauth2/authorize?client_id={}&permissions=2048&scope=bot%20applications.commands
